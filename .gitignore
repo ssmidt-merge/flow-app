@@ -44,3 +44,10 @@ Thumbs.db
 # Logs
 *.log
 logs/
+
+# Development utility scripts (can be regenerated)
+add_sample_users.py
+
+# Build backups and generated assets
+frontend/dist.backup/
+frontend/public/

@@ -92,9 +92,6 @@ jobs:
             --set-env-vars SECRET_KEY=${{ secrets.SECRET_KEY }} \
             --set-env-vars ALGORITHM=HS256 \
             --set-env-vars ACCESS_TOKEN_EXPIRE_MINUTES=30 \
-            --set-env-vars GOOGLE_CLIENT_ID=${{ secrets.GOOGLE_CLIENT_ID }} \
-            --set-env-vars GOOGLE_CLIENT_SECRET=${{ secrets.GOOGLE_CLIENT_SECRET }} \
-            --set-env-vars GOOGLE_REDIRECT_URI=${{ steps.get_url.outputs.SERVICE_URL }}/auth/google/callback \
             --set-env-vars FRONTEND_URL=${{ steps.get_url.outputs.SERVICE_URL }} \
             --set-env-vars BACKEND_URL=${{ steps.get_url.outputs.SERVICE_URL }}
 

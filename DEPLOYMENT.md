@@ -22,7 +22,7 @@ The deployment uses a single Docker container that includes:
 
 ```bash
 # Set your project ID
-export PROJECT_ID="your-project-id"
+export PROJECT_ID="flow-proto-478014"
 
 # Create the project
 gcloud projects create $flow-proto-478014
@@ -31,7 +31,7 @@ gcloud projects create $flow-proto-478014
 gcloud config set project $flow-proto-478014
 
 # Link billing account (required)
-gcloud billing projects link $flow-proto-478014 --billing-account=YOUR_BILLING_ACCOUNT_ID
+gcloud billing projects link $flow-proto-478014 --014304-F5EF4F-981041
 ```
 
 ### 2. Enable Required APIs
@@ -147,7 +147,8 @@ In your GitHub repository, go to **Settings > Secrets and variables > Actions** 
 | `CLOUD_SQL_CONNECTION_NAME_DEV` | `PROJECT_ID:REGION:INSTANCE_NAME` | Cloud SQL connection name |
 | `DATABASE_URL_DEV` | `postgresql://flow_user:PASSWORD@/flow_db?host=/cloudsql/PROJECT_ID:REGION:INSTANCE_NAME` | Database connection string |
 | `SECRET_KEY` | Generated from step 5 | JWT secret key |
-| `GOOGLE_CLIENT_ID` | From Google OAuth Console | Google OAuth client ID |
+| `GOOGLE_CLIENT_ID` | From Google OAuth Console
+ | Google OAuth client ID |
 | `GOOGLE_CLIENT_SECRET` | From Google OAuth Console | Google OAuth client secret |
 
 ### 8. Set Up Google OAuth

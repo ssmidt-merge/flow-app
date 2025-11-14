@@ -6,7 +6,7 @@ on:
       - main
 
 env:
-  PROJECT_ID: magi-development-475815
+  PROJECT_ID: flow-proto-478014
   REGION: us-central1
   SERVICE_NAME: magi-dev
 
